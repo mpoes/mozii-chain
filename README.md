@@ -66,7 +66,7 @@ geth --datadir ./node init mozii.org.json
 指定ip如`172.16.1.4`
 
 ```
-geth --datadir node2 --maxpeers 3 --networkid 1949 --nodiscover --port '30300'  --ipcdisable  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
+geth --datadir ./node --maxpeers 3 --networkid 1949 --nodiscover --port '30300'  --ipcdisable  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
 ```
 
 如果挖矿需要指定账户信息，如：
