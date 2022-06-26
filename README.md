@@ -66,13 +66,13 @@ geth --datadir ./node init mozii.org.json
 指定ip如`172.16.1.4`
 
 ```
-geth --datadir ./node --maxpeers 3 --networkid 1949 --nodiscover --port '30300'  --ipcdisable  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
+geth --datadir ./node --networkid 1949 --nodiscover --port '30300'  --ipcdisable  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
 ```
 
 如果挖矿需要指定账户信息，如：
 
 ```
-geth --datadir ./node --maxpeers 3 --networkid 1949 --nodiscover --port '30300' --ipcdisable  --miner.etherbase 0x79E18fB587605fa144476584e7C7820CC9eCda79 --unlock 0x79E18fB587605fa144476584e7C7820CC9eCda79   --mine  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
+geth --datadir ./node  --networkid 1949 --nodiscover --port '30300' --ipcdisable  --miner.etherbase 0x79E18fB587605fa144476584e7C7820CC9eCda79 --unlock 0x79E18fB587605fa144476584e7C7820CC9eCda79   --mine  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
 ```
 
 ##### 5.查看节点链接信息
