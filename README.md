@@ -1,7 +1,16 @@
-# mozii-chain
+# 关于mozii-chain
+
+智能合约及区块链技术应用探索试验平台链，抛弃金融区块链金融属性，让技术回归应用。
+
+# 搭建mozii-chain（灵境）节点
 
 
-## 1.创建账户
+## 1.安装geth并创建账户
+
+```
+pkg install -y go-ethereum
+```
+## 1.安装geth并创建账户
 
 ```
 geth account new --datadir ./node
