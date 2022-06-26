@@ -1,22 +1,22 @@
-# 一、关于mozii-chain（灵境）链
+### 一、关于mozii-chain（灵境）链
 
 智能合约及区块链技术应用探索试验平台链，抛弃金融区块链金融属性，让技术回归应用，`chainId：1949`。
 
-# 二、搭建mozii-chain（灵境）节点
+### 二、搭建mozii-chain（灵境）节点
 
 
-## 1.安装geth并创建账户
+##### 1.安装geth并创建账户
 
 ```
 pkg install -y go-ethereum
 ```
-## 1.安装geth并创建账户
+##### 1.安装geth并创建账户
 
 ```
 geth account new --datadir ./node
 ```
 
-## 2.准备创世纪文件
+##### 2.准备创世纪文件
 
 ```
 {
@@ -55,13 +55,13 @@ geth account new --datadir ./node
 }
 ```
 
-## 3.初始化
+##### 3.初始化
 
 ```
 geth --datadir ./node init mozii.org.json
 ```
 
-## 4.启动节点
+##### 4.启动节点
 
 指定ip如`172.16.1.4`
 
@@ -75,7 +75,7 @@ geth --datadir node2 --maxpeers 3 --networkid 1949 --nodiscover --port '30300'  
 geth --datadir ./node --maxpeers 3 --networkid 1949 --nodiscover --port '30300' --ipcdisable  --miner.etherbase 0x79E18fB587605fa144476584e7C7820CC9eCda79 --unlock 0x79E18fB587605fa144476584e7C7820CC9eCda79   --mine  --http.port 8545 --http --http.api "admin,eth,txpool,personal,web3" --ws.port 8546 --port 30303 --allow-insecure-unlock --nat=extip:172.16.1.4 --syncmode full console
 ```
 
-## 5.查看节点链接信息
+##### 5.查看节点链接信息
 
 ```
 > admin.nodeInfo.enode 
@@ -86,7 +86,7 @@ geth --datadir ./node --maxpeers 3 --networkid 1949 --nodiscover --port '30300' 
 ```
 
 
-## 6.添加其他节点
+##### 6.添加其他节点
 
 admin.addPeer("enode信息")
 
@@ -96,7 +96,7 @@ admin.addPeer("enode信息")
 admin.addPeer("enode://86c05cbebac1e900cee12c9d7972cc033ec949450a85cd9eee466f1ddafe15cc329b634d7f3cab2ad9edcb5d3a964607b3cb10dccdef51af53a94e986efb5991@47.242.20.105:30303?discport=0")
 ```
 
-## 7.常用命令
+##### 7.常用命令
 
 ```
 
