@@ -105,19 +105,13 @@ clique.proposals
 
 web3.fromWei(eth.getBalance(eth.accounts[0]),"ether")
 
-
-
 web3.fromWei(eth.getBalance("0x79E18fB587605fa144476584e7C7820CC9eCda79"),"ether")
 
-0x052061c864164640ae8ab137e71e3b0363c8d4b3
-web3.fromWei(eth.getBalance(eth.accounts[1]));
 
-web3.fromWei(eth.getBalance("0xEb1e25B9F245486e9939405D215157D277594d1a"),"ether")
-
-web3.fromWei(eth.getBalance("0x124EEe0f65Fe1ad4A1cce82610De341263F05eF4"),"ether")
 查看当前挖矿账户
 
 eth.coinbase
+
 # 交互式控制台中
 
 # 向第二个账户转账 5000 wei。报错 authentication needed: password or unlock。
@@ -145,6 +139,7 @@ eth.sendTransaction({from:eth.accounts[0],to:eth.accounts[1],value:web3.toWei(10
 
 
 personal.unlockAccount(eth.accounts[0])
+
 
 eth.sendTransaction({from:'79e18fb587605fa144476584e7c7820cc9ecda79',to:'0xeb1e25b9f245486e9939405d215157d277594d1a',value:web3.toWei(10,"ether")});
 
